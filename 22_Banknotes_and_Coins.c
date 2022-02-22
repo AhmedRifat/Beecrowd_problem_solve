@@ -5,6 +5,7 @@ int main()
 {
     double N=0;
     scanf("%lf",&N);
+    if(N>=0 && N<=1000000.00){
     printf("NOTAS:\n");
     printf("%d nota(s) de R$ 100.00\n",(int)(N/100));
     N=fmod(N,100);
@@ -29,6 +30,7 @@ int main()
     N=fmod(N,0.10);
     printf("%d moeda(s) de R$ 0.05\n",(int)(N/0.05));
     N=fmod(N,0.05);
-    printf("%d moeda(s) de R$ 0.01\n",(int)(N/0.01)); //dont know why i have to add extra +0.01
+    printf("%d moeda(s) de R$ 0.01\n",(int)(N/0.01+0.01)); //dont know why i have to add extra +0.01
     return 0;
+    }
 }
