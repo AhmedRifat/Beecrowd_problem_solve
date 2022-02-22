@@ -3,8 +3,8 @@
 int main()
 {
     int N;
-    0<N<1000000;
     scanf("%i",&N);
+    if(N>0 && N<1000000){
     printf("%i\n",N);
     
     printf("%i nota(s) de R$ 100,00\n",N/100);
@@ -20,6 +20,6 @@ int main()
     printf("%i nota(s) de R$ 2,00\n",N/2);
     N%=2;
     printf("%i nota(s) de R$ 1,00\n",N/1);
-
+    }
     return 0;
 }
